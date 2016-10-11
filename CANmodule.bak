@@ -29,7 +29,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:electric_car
-LIBS:CANadapter-cache
 LIBS:Motor-interface-cache
 EELAYER 25 0
 EELAYER END
@@ -361,10 +360,6 @@ Wire Wire Line
 	5850 2200 6000 2200
 Wire Notes Line
 	5550 600  5550 1300
-Wire Notes Line
-	5550 2450 5550 3400
-Wire Notes Line
-	800  3400 10950 3400
 Wire Wire Line
 	6500 2100 5850 2100
 Wire Wire Line
@@ -395,22 +390,12 @@ F 3 "" H 6800 4000 50  0000 C CNN
 	1    6800 4000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7150 4500 7150 4450
-Wire Wire Line
-	6150 3350 6150 4700
-Wire Wire Line
-	6150 4700 6450 4700
-Wire Wire Line
-	6450 4700 6450 4450
-Connection ~ 7800 1600
-Connection ~ 7700 1400
-Wire Wire Line
-	7700 1400 7700 3350
-Wire Wire Line
-	7700 3350 6150 3350
-Wire Wire Line
-	7800 1600 7800 4500
-Wire Wire Line
-	7800 4500 7150 4500
+Wire Notes Line
+	5550 2450 5550 3400
+Text Label 6800 5050 0    60   ~ 0
+CAN_H
+Text Label 6800 4900 0    60   ~ 0
+CAN_L
+Text Notes 6150 4600 0    60   ~ 0
+pending pinout from network team
 $EndSCHEMATC

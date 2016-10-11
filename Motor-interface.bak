@@ -29,7 +29,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:electric_car
-LIBS:CANadapter-cache
 LIBS:Motor-interface-cache
 EELAYER 25 0
 EELAYER END
