@@ -28,6 +28,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:electric_car
 LIBS:Motor-interface-cache
 EELAYER 25 0
 EELAYER END
