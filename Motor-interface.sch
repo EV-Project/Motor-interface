@@ -28,7 +28,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:electric_car
 LIBS:Motor-interface-cache
 EELAYER 25 0
 EELAYER END
@@ -66,23 +65,21 @@ $EndComp
 $Comp
 L MCP42010 U1
 U 1 1 57FC991B
-P 4700 2300
-F 0 "U1" H 4400 2750 50  0000 L CNN
-F 1 "MCP42010" H 4800 2750 50  0000 L CNN
-F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 4700 2400 50  0001 C CNN
-F 3 "" H 4700 2400 50  0000 C CNN
-	1    4700 2300
+P 4450 2400
+F 0 "U1" H 4150 2850 50  0000 L CNN
+F 1 "MCP42010" H 4550 2850 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 4450 2500 50  0001 C CNN
+F 3 "" H 4450 2500 50  0000 C CNN
+	1    4450 2400
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	4200 2100 3700 2100
-Text Label 3700 2100 0    60   ~ 0
+	3950 2200 3450 2200
+Text Label 3450 2200 0    60   ~ 0
 Brake
-Text GLabel 4000 2950 0    60   Input ~ 0
-Reverse
 Wire Wire Line
-	3200 2500 4200 2500
-Text Label 5200 2000 0    60   ~ 0
+	2950 2600 3950 2600
+Text Label 4950 2100 0    60   ~ 0
 SCK
 Wire Wire Line
 	9050 2350 8250 2350
@@ -93,23 +90,23 @@ SCK
 Wire Wire Line
 	6600 3250 6850 3250
 Wire Wire Line
-	5200 2000 5400 2000
-Text Label 5200 2300 0    60   ~ 0
+	4950 2100 5150 2100
+Text Label 4950 2400 0    60   ~ 0
 DP-CS
 Text Label 8250 3050 0    60   ~ 0
 DP-CS
 Wire Wire Line
 	8250 3050 8550 3050
 Wire Wire Line
-	5200 2300 5500 2300
-Text Label 5200 2200 0    60   ~ 0
+	4950 2400 5250 2400
+Text Label 4950 2300 0    60   ~ 0
 MISO
-Text Label 5200 2100 0    60   ~ 0
+Text Label 4950 2200 0    60   ~ 0
 MOSI
 Wire Wire Line
-	5200 2100 5400 2100
+	4950 2200 5150 2200
 Wire Wire Line
-	5200 2200 5400 2200
+	4950 2300 5150 2300
 Text Label 8250 3150 0    60   ~ 0
 MISO
 Text Label 8250 3250 0    60   ~ 0
@@ -171,29 +168,29 @@ MOT_ON
 Wire Wire Line
 	6500 3050 6850 3050
 Wire Wire Line
-	3700 2400 4200 2400
+	3450 2500 3950 2500
 Wire Wire Line
 	2550 2550 2400 2550
 $Comp
 L GND #PWR05
 U 1 1 5805B577
-P 4200 2200
-F 0 "#PWR05" H 4200 1950 50  0001 C CNN
-F 1 "GND" H 4200 2050 50  0000 C CNN
-F 2 "" H 4200 2200 50  0000 C CNN
-F 3 "" H 4200 2200 50  0000 C CNN
-	1    4200 2200
+P 3950 2300
+F 0 "#PWR05" H 3950 2050 50  0001 C CNN
+F 1 "GND" H 3950 2150 50  0000 C CNN
+F 2 "" H 3950 2300 50  0000 C CNN
+F 3 "" H 3950 2300 50  0000 C CNN
+	1    3950 2300
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR06
 U 1 1 5805B5A1
-P 4200 2600
-F 0 "#PWR06" H 4200 2350 50  0001 C CNN
-F 1 "GND" H 4200 2450 50  0000 C CNN
-F 2 "" H 4200 2600 50  0000 C CNN
-F 3 "" H 4200 2600 50  0000 C CNN
-	1    4200 2600
+P 3950 2700
+F 0 "#PWR06" H 3950 2450 50  0001 C CNN
+F 1 "GND" H 3950 2550 50  0000 C CNN
+F 2 "" H 3950 2700 50  0000 C CNN
+F 3 "" H 3950 2700 50  0000 C CNN
+	1    3950 2700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -263,8 +260,6 @@ Wire Wire Line
 	1000 7150 1275 7150
 Wire Wire Line
 	1000 7250 1275 7250
-Wire Wire Line
-	1000 7350 1275 7350
 Text Notes 1000 6875 0    39   ~ 0
 Ha/SIN
 Text Notes 1000 6975 0    39   ~ 0
@@ -287,8 +282,6 @@ Text Label 1275 7150 0    59   ~ 0
 Power
 Text Label 1275 7250 0    59   ~ 0
 GND
-Text Label 1275 7350 0    59   ~ 0
-Motor-temperature
 Wire Wire Line
 	1000 5150 1275 5150
 Wire Wire Line
@@ -317,9 +310,9 @@ Wire Wire Line
 	1000 6350 1275 6350
 Wire Wire Line
 	1775 6925 1800 6925
-Text Label 3200 2500 0    60   ~ 0
+Text Label 2950 2600 0    60   ~ 0
 Accelerator-signal
-Text Label 3700 2400 0    60   ~ 0
+Text Label 3450 2500 0    60   ~ 0
 +5V
 Text Label 1100 850  0    59   ~ 0
 GND
@@ -338,10 +331,10 @@ F 3 "" H 1100 900 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	1100 850  1100 900 
-Text Label 3700 2000 0    60   ~ 0
+Text Label 3450 2100 0    60   ~ 0
 +5V
 Wire Wire Line
-	3700 2000 4200 2000
+	3450 2100 3950 2100
 Text Notes 1100 1500 0    60   ~ 0
 On/Off Switch
 Wire Notes Line
@@ -738,4 +731,96 @@ Wire Notes Line
 	4800 5700 2600 5700
 Wire Notes Line
 	8550 3950 8550 6450
+$Comp
+L CONN_01X06 P?
+U 1 1 5821DB26
+P 9150 4700
+F 0 "P?" H 9150 5050 50  0000 C CNN
+F 1 "CONN_01X06" V 9250 4700 50  0000 C CNN
+F 2 "" H 9150 4700 50  0000 C CNN
+F 3 "" H 9150 4700 50  0000 C CNN
+	1    9150 4700
+	-1   0    0    -1  
+$EndComp
+Text Label 9350 4450 0    59   ~ 0
+Motor-sensor-A
+Text Label 9350 4550 0    59   ~ 0
+Motor-sensor-B
+Text Label 9350 4650 0    59   ~ 0
+Motor-sensor-C
+Text Label 9350 4750 0    59   ~ 0
+Power
+Text Label 9350 4850 0    59   ~ 0
+GND
+Wire Wire Line
+	1000 7350 1275 7350
+Text Label 1275 7350 0    59   ~ 0
+Motor-temperature
+Text Label 9350 4950 0    59   ~ 0
+Motor-temperature
+$Comp
+L GND #PWR?
+U 1 1 5822F91D
+P 4450 2900
+F 0 "#PWR?" H 4450 2650 50  0001 C CNN
+F 1 "GND" H 4450 2750 50  0000 C CNN
+F 2 "" H 4450 2900 50  0000 C CNN
+F 3 "" H 4450 2900 50  0000 C CNN
+	1    4450 2900
+	1    0    0    -1  
+$EndComp
+Text Notes 4450 1900 0    60   ~ 0
++5V(Check requirments)\nadd level converters
+$Comp
+L CONN_01X04 P?
+U 1 1 58232DEE
+P 3100 6400
+F 0 "P?" H 3100 6650 50  0000 C CNN
+F 1 "CONN_01X04" V 3200 6400 50  0000 C CNN
+F 2 "" H 3100 6400 50  0000 C CNN
+F 3 "" H 3100 6400 50  0000 C CNN
+	1    3100 6400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X04 P?
+U 1 1 58232EBA
+P 3100 7200
+F 0 "P?" H 3100 7450 50  0000 C CNN
+F 1 "CONN_01X04" V 3200 7200 50  0000 C CNN
+F 2 "" H 3100 7200 50  0000 C CNN
+F 3 "" H 3100 7200 50  0000 C CNN
+	1    3100 7200
+	-1   0    0    -1  
+$EndComp
+Text Label 3300 6250 0    60   ~ 0
+USB-Programmer-Wires-RX
+Text Label 3300 6350 0    59   ~ 0
+USB-Programmer-Wires-TX
+Text Label 3300 7050 0    59   ~ 0
+CAN-H
+Text Label 3300 7150 0    59   ~ 0
+CAN-L
+$Comp
+L GND #PWR?
+U 1 1 5823333B
+P 3300 6550
+F 0 "#PWR?" H 3300 6300 50  0001 C CNN
+F 1 "GND" H 3300 6400 50  0000 C CNN
+F 2 "" H 3300 6550 50  0000 C CNN
+F 3 "" H 3300 6550 50  0000 C CNN
+	1    3300 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5823340C
+P 3300 7350
+F 0 "#PWR?" H 3300 7100 50  0001 C CNN
+F 1 "GND" H 3300 7200 50  0000 C CNN
+F 2 "" H 3300 7350 50  0000 C CNN
+F 3 "" H 3300 7350 50  0000 C CNN
+	1    3300 7350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
