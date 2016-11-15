@@ -58,7 +58,7 @@ U 1 1 57FC913B
 P 8000 1900
 F 0 "U109" H 8000 1750 39  0000 C CNN
 F 1 "Teensy_3.2" H 8000 2450 39  0000 C CNN
-F 2 "Housings_SSOP:TSSOP-32_6.1x11mm_Pitch0.65mm" H 7700 1450 39  0001 C CNN
+F 2 "electric_car_lib:Teensy3.2_inv" H 7700 1450 39  0001 C CNN
 F 3 "" H 7700 1450 39  0000 C CNN
 	1    8000 1900
 	-1   0    0    -1  
@@ -637,7 +637,9 @@ Wire Wire Line
 Wire Wire Line
 	8350 5000 8350 5050
 Wire Wire Line
-	8350 5450 8350 5550
+	8350 5450 8350 5500
+Wire Wire Line
+	8350 5500 8350 5550
 Wire Wire Line
 	8600 5400 8600 5500
 Wire Wire Line
@@ -646,7 +648,9 @@ Connection ~ 8350 5500
 Wire Wire Line
 	8600 5000 8600 5100
 Wire Wire Line
-	7600 5000 8600 5000
+	7600 5000 8350 5000
+Wire Wire Line
+	8350 5000 8600 5000
 Connection ~ 8350 5000
 Wire Wire Line
 	6200 1500 7300 1500
@@ -871,7 +875,9 @@ $EndComp
 Text Label 4250 3700 2    59   ~ 0
 Hall_Power
 Wire Wire Line
-	4250 3700 4550 3700
+	4250 3700 4450 3700
+Wire Wire Line
+	4450 3700 4550 3700
 Wire Wire Line
 	4850 3700 4950 3700
 Wire Wire Line
@@ -913,7 +919,9 @@ Wire Wire Line
 Wire Wire Line
 	4950 4700 4850 4700
 Wire Wire Line
-	4450 3700 4450 4700
+	4450 3700 4450 4200
+Wire Wire Line
+	4450 4200 4450 4700
 Wire Wire Line
 	4450 4700 4550 4700
 Connection ~ 4450 3700
