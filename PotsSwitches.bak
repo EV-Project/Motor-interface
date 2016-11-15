@@ -1,0 +1,527 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:electric_car
+LIBS:Motor-interface-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title "Motor Interface"
+Date "2016-02-02"
+Rev "0.0"
+Comp ""
+Comment1 "A module to link a BLDC motor controller to a CAN bus"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCP42010 U?
+U 1 1 582ABDBA
+P 2200 2800
+F 0 "U?" H 1900 3250 50  0000 L CNN
+F 1 "MCP42010" H 2300 3250 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 2200 2900 50  0001 C CNN
+F 3 "" H 2200 2900 50  0000 C CNN
+	1    2200 2800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 2900 1700 2900
+Text Label 1450 2900 0    60   ~ 0
++5V
+Text Label 1300 1100 0    59   ~ 0
+GND
+Text Label 1200 700  0    60   ~ 0
++5V
+Text Label 1450 2500 0    60   ~ 0
++5V
+Wire Wire Line
+	1450 2500 1700 2500
+Text Notes 1200 1900 0    60   ~ 0
+Accel and Brake Pots
+$Comp
+L GND #PWR?
+U 1 1 582ABDC8
+P 8600 4200
+F 0 "#PWR?" H 8600 3950 50  0001 C CNN
+F 1 "GND" H 8600 4050 50  0000 C CNN
+F 2 "" H 8600 4200 50  0000 C CNN
+F 3 "" H 8600 4200 50  0000 C CNN
+	1    8600 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 2400 9300 2400
+$Comp
+L R R?
+U 1 1 582ABDC9
+P 8450 2400
+F 0 "R?" V 8530 2400 50  0000 C CNN
+F 1 "1k" V 8450 2400 50  0000 C CNN
+F 2 "" V 8380 2400 50  0000 C CNN
+F 3 "" H 8450 2400 50  0000 C CNN
+	1    8450 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8600 2400 8700 2400
+Wire Wire Line
+	9400 3200 9300 3200
+$Comp
+L R R?
+U 1 1 582ABDD2
+P 8450 3200
+F 0 "R?" V 8530 3200 50  0000 C CNN
+F 1 "1k" V 8450 3200 50  0000 C CNN
+F 2 "" V 8380 3200 50  0000 C CNN
+F 3 "" H 8450 3200 50  0000 C CNN
+	1    8450 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8600 3200 8700 3200
+Wire Wire Line
+	9400 4000 9300 4000
+$Comp
+L R R?
+U 1 1 582ABDD6
+P 8450 4000
+F 0 "R?" V 8530 4000 50  0000 C CNN
+F 1 "1k" V 8450 4000 50  0000 C CNN
+F 2 "" V 8380 4000 50  0000 C CNN
+F 3 "" H 8450 4000 50  0000 C CNN
+	1    8450 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8600 4000 8700 4000
+Wire Wire Line
+	9400 4800 9300 4800
+$Comp
+L R R?
+U 1 1 582ABDDA
+P 8450 4800
+F 0 "R?" V 8530 4800 50  0000 C CNN
+F 1 "1k" V 8450 4800 50  0000 C CNN
+F 2 "" V 8380 4800 50  0000 C CNN
+F 3 "" H 8450 4800 50  0000 C CNN
+	1    8450 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L TLP2361 U?
+U 1 1 582ABDEC
+P 4000 3500
+F 0 "U?" H 4000 3300 50  0000 L CNN
+F 1 "TLP2361" H 4000 3700 50  0000 C CNN
+F 2 "SO5" H 3800 3300 50  0000 L CIN
+F 3 "" H 4000 3500 50  0000 L CNN
+	1    4000 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L TLP2361 U?
+U 1 1 582ABDED
+P 4000 4000
+F 0 "U?" H 4000 3800 50  0000 L CNN
+F 1 "TLP2361" H 4000 4200 50  0000 C CNN
+F 2 "SO5" H 3800 3800 50  0000 L CIN
+F 3 "" H 4000 4000 50  0000 L CNN
+	1    4000 4000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L TLP2361 U?
+U 1 1 582ABDEE
+P 4000 3000
+F 0 "U?" H 4000 2800 50  0000 L CNN
+F 1 "TLP2361" H 4000 3200 50  0000 C CNN
+F 2 "SO5" H 3800 2800 50  0000 L CIN
+F 3 "" H 4000 3000 50  0000 L CNN
+	1    4000 3000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L TLP2361 U?
+U 1 1 582ABDEF
+P 4000 2500
+F 0 "U?" H 4000 2300 50  0000 L CNN
+F 1 "TLP2361" H 4000 2700 50  0000 C CNN
+F 2 "SO5" H 3800 2300 50  0000 L CIN
+F 3 "" H 4000 2500 50  0000 L CNN
+	1    4000 2500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 582ABDF1
+P 4400 3600
+F 0 "#PWR?" H 4400 3350 50  0001 C CNN
+F 1 "GND" H 4400 3450 50  0000 C CNN
+F 2 "" H 4400 3600 50  0000 C CNN
+F 3 "" H 4400 3600 50  0000 C CNN
+	1    4400 3600
+	1    0    0    -1  
+$EndComp
+Text Label 3400 2400 0    60   ~ 0
++5V
+Text Label 3850 3000 3    59   ~ 0
+GND
+Text Label 3400 2600 0    59   ~ 0
+GND
+Text Label 3400 3100 0    59   ~ 0
+GND
+$Comp
+L R R?
+U 1 1 582ABDF2
+P 4550 2600
+F 0 "R?" V 4630 2600 50  0000 C CNN
+F 1 "1k" V 4550 2600 50  0000 C CNN
+F 2 "" V 4480 2600 50  0000 C CNN
+F 3 "" H 4550 2600 50  0000 C CNN
+	1    4550 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 582AD716
+P 4550 3100
+F 0 "R?" V 4630 3100 50  0000 C CNN
+F 1 "1k" V 4550 3100 50  0000 C CNN
+F 2 "" V 4480 3100 50  0000 C CNN
+F 3 "" H 4550 3100 50  0000 C CNN
+	1    4550 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 582AD7A9
+P 4550 4100
+F 0 "R?" V 4630 4100 50  0000 C CNN
+F 1 "1k" V 4550 4100 50  0000 C CNN
+F 2 "" V 4480 4100 50  0000 C CNN
+F 3 "" H 4550 4100 50  0000 C CNN
+	1    4550 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 582AD82B
+P 3450 3600
+F 0 "R?" V 3530 3600 50  0000 C CNN
+F 1 "1k" V 3450 3600 50  0000 C CNN
+F 2 "" V 3380 3600 50  0000 C CNN
+F 3 "" H 3450 3600 50  0000 C CNN
+	1    3450 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3400 2600 3700 2600
+Wire Wire Line
+	3400 2400 3700 2400
+Text Label 3400 2900 0    60   ~ 0
++5V
+Text Label 3400 4100 0    59   ~ 0
+GND
+Text Label 3400 3900 0    60   ~ 0
++5V
+Wire Wire Line
+	4800 4100 4700 4100
+Wire Wire Line
+	4800 3100 4700 3100
+Wire Wire Line
+	4800 2600 4700 2600
+$Comp
+L +3V3 #PWR?
+U 1 1 582AE728
+P 4400 3400
+F 0 "#PWR?" H 4400 3250 50  0001 C CNN
+F 1 "+3V3" H 4400 3540 50  0000 C CNN
+F 2 "" H 4400 3400 50  0000 C CNN
+F 3 "" H 4400 3400 50  0000 C CNN
+	1    4400 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 3400 4300 3400
+Wire Wire Line
+	4300 3500 4800 3500
+Wire Wire Line
+	4300 3600 4400 3600
+Wire Wire Line
+	4400 2600 4300 2600
+Wire Wire Line
+	4300 3100 4400 3100
+Wire Wire Line
+	4400 4100 4300 4100
+$Comp
+L +3V3 #PWR?
+U 1 1 582AEEE5
+P 4400 2400
+F 0 "#PWR?" H 4400 2250 50  0001 C CNN
+F 1 "+3V3" H 4400 2540 50  0000 C CNN
+F 2 "" H 4400 2400 50  0000 C CNN
+F 3 "" H 4400 2400 50  0000 C CNN
+	1    4400 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR?
+U 1 1 582AEF3B
+P 4400 2900
+F 0 "#PWR?" H 4400 2750 50  0001 C CNN
+F 1 "+3V3" H 4400 3040 50  0000 C CNN
+F 2 "" H 4400 2900 50  0000 C CNN
+F 3 "" H 4400 2900 50  0000 C CNN
+	1    4400 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR?
+U 1 1 582AEF91
+P 4600 3900
+F 0 "#PWR?" H 4600 3750 50  0001 C CNN
+F 1 "+3V3" H 4600 4040 50  0000 C CNN
+F 2 "" H 4600 3900 50  0000 C CNN
+F 3 "" H 4600 3900 50  0000 C CNN
+	1    4600 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3900 4300 3900
+Wire Wire Line
+	4400 2900 4300 2900
+Wire Wire Line
+	4400 2400 4300 2400
+Wire Wire Line
+	3700 2900 3400 2900
+Wire Wire Line
+	3700 3100 3400 3100
+Wire Wire Line
+	3600 3600 3700 3600
+Wire Wire Line
+	3700 3900 3400 3900
+Wire Wire Line
+	3700 4100 3400 4100
+Wire Wire Line
+	2700 2500 3700 2500
+Wire Wire Line
+	3700 3000 3200 3000
+Wire Wire Line
+	3200 3000 3200 2600
+Wire Wire Line
+	3200 2600 2700 2600
+Wire Wire Line
+	2700 2700 3100 2700
+Wire Wire Line
+	3100 2700 3100 3600
+Wire Wire Line
+	3100 3600 3300 3600
+Wire Wire Line
+	3700 4000 3000 4000
+Wire Wire Line
+	3000 4000 3000 2800
+Wire Wire Line
+	3000 2800 2700 2800
+Text Label 3450 3400 0    60   ~ 0
++5V
+Wire Wire Line
+	3450 3400 3700 3400
+Text Label 2200 3450 0    59   ~ 0
+GND
+Wire Wire Line
+	2200 3450 2200 3300
+Text Label 2200 2200 0    60   ~ 0
++5V
+Wire Wire Line
+	2200 2200 2200 2300
+Text HLabel 1000 700  0    60   Input ~ 0
+Motor_5V
+Wire Wire Line
+	1000 700  1200 700 
+Text HLabel 1100 1100 0    60   Input ~ 0
+Motor_GND
+Wire Wire Line
+	1100 1100 1300 1100
+Text HLabel 9400 2400 2    60   Input ~ 0
+FWD/REV-Switch
+Text HLabel 9400 3200 2    60   Input ~ 0
+Brake-Switch
+Text HLabel 9400 4000 2    60   Input ~ 0
+Cruise-Switch
+Text HLabel 9400 4800 2    60   Input ~ 0
+Hybrid-Switch
+$Comp
+L TLP291 U?
+U 1 1 582B1201
+P 9000 2500
+F 0 "U?" H 8800 2700 50  0000 L CNN
+F 1 "TLP291" H 9000 2700 50  0000 L CNN
+F 2 "SOP-4" H 8800 2300 50  0000 L CIN
+F 3 "" H 9000 2500 50  0000 L CNN
+	1    9000 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L TLP291 U?
+U 1 1 582B14A0
+P 9000 3300
+F 0 "U?" H 8800 3500 50  0000 L CNN
+F 1 "TLP291" H 9000 3500 50  0000 L CNN
+F 2 "SOP-4" H 8800 3100 50  0000 L CIN
+F 3 "" H 9000 3300 50  0000 L CNN
+	1    9000 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 4800 8700 4800
+$Comp
+L TLP291 U?
+U 1 1 582B1845
+P 9000 4100
+F 0 "U?" H 8800 4300 50  0000 L CNN
+F 1 "TLP291" H 9000 4300 50  0000 L CNN
+F 2 "SOP-4" H 8800 3900 50  0000 L CIN
+F 3 "" H 9000 4100 50  0000 L CNN
+	1    9000 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L TLP291 U?
+U 1 1 582B18AB
+P 9000 4900
+F 0 "U?" H 8800 5100 50  0000 L CNN
+F 1 "TLP291" H 9000 5100 50  0000 L CNN
+F 2 "SOP-4" H 8800 4700 50  0000 L CIN
+F 3 "" H 9000 4900 50  0000 L CNN
+	1    9000 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 582B1B80
+P 8600 5000
+F 0 "#PWR?" H 8600 4750 50  0001 C CNN
+F 1 "GND" H 8600 4850 50  0000 C CNN
+F 2 "" H 8600 5000 50  0000 C CNN
+F 3 "" H 8600 5000 50  0000 C CNN
+	1    8600 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 582B1BBE
+P 8600 3400
+F 0 "#PWR?" H 8600 3150 50  0001 C CNN
+F 1 "GND" H 8600 3250 50  0000 C CNN
+F 2 "" H 8600 3400 50  0000 C CNN
+F 3 "" H 8600 3400 50  0000 C CNN
+	1    8600 3400
+	1    0    0    -1  
+$EndComp
+Text Label 9600 2600 2    59   ~ 0
+GND
+Wire Wire Line
+	9600 2600 9300 2600
+Text Label 9600 3400 2    59   ~ 0
+GND
+Text Label 9600 4200 2    59   ~ 0
+GND
+Text Label 9600 5000 2    59   ~ 0
+GND
+Wire Wire Line
+	9600 3400 9300 3400
+Wire Wire Line
+	9300 4200 9600 4200
+Wire Wire Line
+	9600 5000 9300 5000
+$Comp
+L GND #PWR?
+U 1 1 582B1F30
+P 8600 2600
+F 0 "#PWR?" H 8600 2350 50  0001 C CNN
+F 1 "GND" H 8600 2450 50  0000 C CNN
+F 2 "" H 8600 2600 50  0000 C CNN
+F 3 "" H 8600 2600 50  0000 C CNN
+	1    8600 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 2600 8600 2600
+Wire Wire Line
+	8700 3400 8600 3400
+Wire Wire Line
+	8700 4200 8600 4200
+Wire Wire Line
+	8700 5000 8600 5000
+Text HLabel 8200 2400 0    60   Input ~ 0
+Reverse
+Text HLabel 8200 3200 0    60   Input ~ 0
+Brake
+Text HLabel 8200 4000 0    60   Input ~ 0
+Cruise
+Text HLabel 8200 4800 0    60   Input ~ 0
+Hybrid
+Wire Wire Line
+	8300 2400 8200 2400
+Wire Wire Line
+	8200 3200 8300 3200
+Wire Wire Line
+	8300 4000 8200 4000
+Wire Wire Line
+	8200 4800 8300 4800
+Text HLabel 4800 2600 2    60   Input ~ 0
+SCK
+Text HLabel 4800 3100 2    60   Input ~ 0
+MOSI
+Text HLabel 4800 3500 2    60   Input ~ 0
+MISO
+Text HLabel 4800 4100 2    60   Input ~ 0
+DP-CS
+Text HLabel 1350 2600 0    60   Input ~ 0
+BrakePot
+Text HLabel 1350 3000 0    60   Input ~ 0
+AccelPot
+Wire Wire Line
+	1700 2600 1350 2600
+Wire Wire Line
+	1700 3000 1350 3000
+Text Label 1450 2700 0    59   ~ 0
+GND
+Wire Wire Line
+	1450 2700 1700 2700
+Text Label 1450 3100 0    59   ~ 0
+GND
+Wire Wire Line
+	1450 3100 1700 3100
+$EndSCHEMATC

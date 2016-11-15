@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 2 3
 Title "CAN adapter"
 Date "2016-02-02"
 Rev "0.0"
@@ -225,12 +225,18 @@ Wire Wire Line
 Wire Wire Line
 	7000 2000 7200 2000
 Wire Wire Line
-	7200 1900 7200 2100
+	7200 1900 7200 2000
+Wire Wire Line
+	7200 2000 7200 2100
 Connection ~ 7200 2000
 Wire Wire Line
-	7700 1600 8300 1600
+	7700 1600 7950 1600
 Wire Wire Line
-	7700 1400 8300 1400
+	7950 1600 8300 1600
+Wire Wire Line
+	7700 1400 8150 1400
+Wire Wire Line
+	8150 1400 8300 1400
 Connection ~ 7950 1600
 Connection ~ 8150 1400
 Wire Wire Line
@@ -244,11 +250,15 @@ Wire Wire Line
 Wire Wire Line
 	4800 1600 5250 1600
 Wire Wire Line
-	5000 1400 5000 2000
+	5000 1400 5000 1500
+Wire Wire Line
+	5000 1500 5000 2000
 Wire Wire Line
 	5850 1500 6000 1500
 Wire Wire Line
-	6000 1400 6000 2000
+	6000 1400 6000 1500
+Wire Wire Line
+	6000 1500 6000 2000
 Wire Wire Line
 	7200 1000 7200 1100
 Wire Wire Line
@@ -260,7 +270,9 @@ Wire Wire Line
 Wire Wire Line
 	8150 2100 8150 2200
 Wire Wire Line
-	7950 2500 8300 2500
+	7950 2500 8150 2500
+Wire Wire Line
+	8150 2500 8300 2500
 Wire Wire Line
 	4150 1800 4800 1800
 Wire Wire Line
@@ -302,25 +314,12 @@ Text HLabel 4150 1900 0    60   Input ~ 0
 CAN_TX
 Text HLabel 4150 1800 0    60   Input ~ 0
 CAN_RX
-$Comp
-L RJ45 J1
-U 1 1 57FCC775
-P 6800 4000
-F 0 "J1" H 6820 4020 20  0000 C CNN
-F 1 "RJ45" H 6650 4500 50  0000 C CNN
-F 2 "Connect:RJ45_8" H 6800 4000 50  0001 C CNN
-F 3 "" H 6800 4000 50  0000 C CNN
-	1    6800 4000
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	5550 2450 5550 3400
-Text Label 6800 5050 0    60   ~ 0
+Text Label 7600 5100 0    60   ~ 0
 CAN_H
-Text Label 6800 4900 0    60   ~ 0
+Text Label 7600 5200 0    60   ~ 0
 CAN_L
-Text Notes 6150 4600 0    60   ~ 0
-pending pinout from network team
 $Comp
 L +5VA #PWR?
 U 1 1 582A8343
@@ -398,4 +397,102 @@ F 3 "" H 5000 1400 50  0000 C CNN
 	1    5000 1400
 	1    0    0    -1  
 $EndComp
+$Comp
+L RJ45 J?
+U 1 1 582DA582
+P 8050 4250
+F 0 "J?" H 8070 4270 20  0000 C CNN
+F 1 "RJ45" H 7900 4750 50  0000 C CNN
+F 2 "Connect:RJ45_8" H 8050 4250 50  0001 C CNN
+F 3 "" H 8050 4250 50  0000 C CNN
+	1    8050 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR?
+U 1 1 582DA73C
+P 8200 5000
+F 0 "#PWR?" H 8200 4850 50  0001 C CNN
+F 1 "+12V" H 8200 5140 50  0000 C CNN
+F 2 "" H 8200 5000 50  0000 C CNN
+F 3 "" H 8200 5000 50  0000 C CNN
+	1    8200 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 582DA7E4
+P 8400 5000
+F 0 "#PWR?" H 8400 4750 50  0001 C CNN
+F 1 "GNDA" H 8400 4850 50  0000 C CNN
+F 2 "" H 8400 5000 50  0000 C CNN
+F 3 "" H 8400 5000 50  0000 C CNN
+	1    8400 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 5000 8400 4700
+Wire Wire Line
+	7600 5200 8100 5200
+Wire Wire Line
+	8100 5200 8100 4700
+Wire Wire Line
+	7600 5100 8000 5100
+Wire Wire Line
+	8000 5100 8000 4700
+Wire Wire Line
+	8200 5000 8300 5000
+Wire Wire Line
+	8300 5000 8300 4700
+Text Label 6500 5100 0    60   ~ 0
+CAN_H
+Text Label 6500 5200 0    60   ~ 0
+CAN_L
+$Comp
+L RJ45 J?
+U 1 1 582DC5CA
+P 6950 4250
+F 0 "J?" H 6970 4270 20  0000 C CNN
+F 1 "RJ45" H 6800 4750 50  0000 C CNN
+F 2 "Connect:RJ45_8" H 6950 4250 50  0001 C CNN
+F 3 "" H 6950 4250 50  0000 C CNN
+	1    6950 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR?
+U 1 1 582DC5D0
+P 7100 5000
+F 0 "#PWR?" H 7100 4850 50  0001 C CNN
+F 1 "+12V" H 7100 5140 50  0000 C CNN
+F 2 "" H 7100 5000 50  0000 C CNN
+F 3 "" H 7100 5000 50  0000 C CNN
+	1    7100 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 582DC5D6
+P 7300 5000
+F 0 "#PWR?" H 7300 4750 50  0001 C CNN
+F 1 "GNDA" H 7300 4850 50  0000 C CNN
+F 2 "" H 7300 5000 50  0000 C CNN
+F 3 "" H 7300 5000 50  0000 C CNN
+	1    7300 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 5000 7300 4700
+Wire Wire Line
+	6500 5200 7000 5200
+Wire Wire Line
+	7000 5200 7000 4700
+Wire Wire Line
+	6500 5100 6900 5100
+Wire Wire Line
+	6900 5100 6900 4700
+Wire Wire Line
+	7100 5000 7200 5000
+Wire Wire Line
+	7200 5000 7200 4700
 $EndSCHEMATC
