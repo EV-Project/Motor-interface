@@ -58,7 +58,7 @@ U 1 1 57FC913B
 P 8000 1900
 F 0 "U109" H 8000 1750 39  0000 C CNN
 F 1 "Teensy_3.2" H 8000 2450 39  0000 C CNN
-F 2 "electric_car_lib:Teensy3.2_inv" H 7700 1450 39  0001 C CNN
+F 2 "electric_car_lib:Teensy3.2" H 7700 1450 39  0001 C CNN
 F 3 "" H 7700 1450 39  0000 C CNN
 	1    8000 1900
 	-1   0    0    -1  
@@ -84,7 +84,7 @@ F 3 "" H 7900 5500 50  0000 C CNN
 $EndComp
 Text Label 6950 5400 0    60   ~ 0
 MOT_ON
-Text Label 9200 2200 2    60   ~ 0
+Text Label 6200 1700 0    60   ~ 0
 MOT_ON
 $Comp
 L CONN_01X23 P101
@@ -192,7 +192,7 @@ Text Notes 3000 3400 0    60   ~ 0
 Motor Hall Effect Connections
 Text Notes 9150 4750 0    60   ~ 0
 Motor Controller USB and CAN lines
-Text Label 9200 1800 2    60   ~ 0
+Text Label 6200 1800 0    60   ~ 0
 Reverse
 $Comp
 L R R113
@@ -252,9 +252,9 @@ Text Label 10700 5000 2    60   ~ 0
 USB-Programmer-Wires-RX
 Text Label 10700 5100 2    59   ~ 0
 USB-Programmer-Wires-TX
-Text Label 11000 5400 2    59   ~ 0
-Motor_CAN-H
 Text Label 11000 5500 2    59   ~ 0
+Motor_CAN-H
+Text Label 11000 5400 2    59   ~ 0
 Motor_CAN-L
 $Comp
 L +3V3 #PWR02
@@ -501,17 +501,17 @@ F 3 "" H 5750 7200 50  0000 C CNN
 	1    5750 7200
 	0    1    1    0   
 $EndComp
-Text Label 9200 1900 2    60   ~ 0
+Text Label 6200 1900 0    60   ~ 0
 Brake
-Text Label 9200 2000 2    60   ~ 0
+Text Label 6200 2000 0    60   ~ 0
 Cruise
 Text Label 9200 2100 2    60   ~ 0
 Hybrid
-Text Label 6200 1900 0    60   ~ 0
+Text Label 6200 2200 0    60   ~ 0
 Line-Cont
-Text Label 6200 2000 0    60   ~ 0
+Text Label 6200 2400 0    60   ~ 0
 Rev-Cont
-Text Label 6200 2100 0    60   ~ 0
+Text Label 6200 2300 0    60   ~ 0
 Fan_Cont
 Text Label 9700 5200 2    60   ~ 0
 M_GND
@@ -570,13 +570,13 @@ Wire Wire Line
 Wire Wire Line
 	8700 1200 8850 1200
 Wire Wire Line
-	6200 1500 7300 1500
-Wire Wire Line
-	6200 1600 7300 1600
-Wire Wire Line
 	6200 1700 7300 1700
 Wire Wire Line
 	6200 1800 7300 1800
+Wire Wire Line
+	6200 1900 7300 1900
+Wire Wire Line
+	6200 2000 7300 2000
 Wire Wire Line
 	5600 1900 5200 1900
 Wire Wire Line
@@ -654,11 +654,11 @@ Wire Wire Line
 Wire Wire Line
 	8700 2100 9200 2100
 Wire Wire Line
-	6200 1900 7300 1900
-Wire Wire Line
-	7300 2000 6200 2000
-Wire Wire Line
 	6200 2100 7300 2100
+Wire Wire Line
+	7300 2200 6200 2200
+Wire Wire Line
+	6200 2300 7300 2300
 Wire Wire Line
 	3050 4300 4150 4300
 Wire Wire Line
@@ -1039,16 +1039,16 @@ Text Label 11200 4000 2    60   ~ 0
 Motor_Logic_On
 Wire Wire Line
 	11200 4000 10500 4000
-Text Label 6200 1500 0    60   ~ 0
+Text Label 9400 2200 2    60   ~ 0
 Motor_Logic_On
-Text Label 6200 1600 0    60   ~ 0
+Text Label 9200 1800 2    60   ~ 0
 HallC
-Text Label 6200 1700 0    60   ~ 0
+Text Label 9200 1900 2    60   ~ 0
 HallB
-Text Label 6200 1800 0    60   ~ 0
+Text Label 9200 2000 2    60   ~ 0
 HallA
 Wire Wire Line
-	9200 2200 8700 2200
+	9400 2200 8700 2200
 $Comp
 L +12V #PWR018
 U 1 1 582DCA99
@@ -1330,20 +1330,20 @@ F 3 "" H 7700 4500 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	7250 4400 7500 4400
+	7100 4400 7500 4400
 $Comp
 L CONN_01X02 P107
 U 1 1 582C2C61
-P 7050 4350
-F 0 "P107" H 7050 4500 50  0000 C CNN
-F 1 "Battery+" V 7150 4350 50  0000 C CNN
-F 2 "Connect:bornier2" H 7050 4350 50  0001 C CNN
-F 3 "" H 7050 4350 50  0000 C CNN
-	1    7050 4350
+P 6900 4350
+F 0 "P107" H 6900 4500 50  0000 C CNN
+F 1 "Battery+" V 7000 4350 50  0000 C CNN
+F 2 "Connect:bornier2" H 6900 4350 50  0001 C CNN
+F 3 "" H 6900 4350 50  0000 C CNN
+	1    6900 4350
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	7250 4300 7250 4400
+	7100 4300 7100 4400
 Text Label 3900 4800 2    59   ~ 0
 Motor-sensor-A
 Text Label 3900 5000 2    59   ~ 0
@@ -1362,4 +1362,59 @@ Wire Wire Line
 	4050 5100 3100 5100
 Wire Wire Line
 	3100 5200 3950 5200
+Text Label 7150 4400 0    60   ~ 0
+Battery+
+Text Label 7700 4750 2    60   ~ 0
+on_triac
+$Comp
+L CONN_01X04 P110
+U 1 1 582D9085
+P 6000 1450
+F 0 "P110" H 6000 1700 50  0000 C CNN
+F 1 "HallCurrent" V 6100 1450 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 6000 1450 50  0001 C CNN
+F 3 "" H 6000 1450 50  0000 C CNN
+	1    6000 1450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR031
+U 1 1 582D980D
+P 6300 1300
+F 0 "#PWR031" H 6300 1150 50  0001 C CNN
+F 1 "+3V3" H 6300 1440 50  0000 C CNN
+F 2 "" H 6300 1300 50  0000 C CNN
+F 3 "" H 6300 1300 50  0000 C CNN
+	1    6300 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR032
+U 1 1 582D98FC
+P 6550 1250
+F 0 "#PWR032" H 6550 1000 50  0001 C CNN
+F 1 "GND" H 6550 1100 50  0000 C CNN
+F 2 "" H 6550 1250 50  0000 C CNN
+F 3 "" H 6550 1250 50  0000 C CNN
+	1    6550 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 1300 6200 1300
+Wire Wire Line
+	6200 1400 6400 1400
+Wire Wire Line
+	6400 1400 6400 1250
+Wire Wire Line
+	6400 1250 6550 1250
+Wire Wire Line
+	6200 1500 7300 1500
+Wire Wire Line
+	6200 1600 7300 1600
+Text Label 6250 1500 0    60   ~ 0
+I_HallRef
+Text Label 6250 1600 0    60   ~ 0
+I_Hall
+Wire Wire Line
+	7300 2400 6200 2400
 $EndSCHEMATC
