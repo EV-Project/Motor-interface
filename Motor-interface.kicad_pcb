@@ -2015,7 +2015,7 @@
     (fp_text reference Q101 (at 0 -8.255 270) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value Q_NPN_BCE (at 5.715 -0.635 360) (layer F.Fab)
+    (fp_text value NJD35N04G (at 5.715 -0.635 360) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.7051 -4.4323) (end -2.7051 -5.6261) (layer F.SilkS) (width 0.15))
