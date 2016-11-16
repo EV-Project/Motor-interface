@@ -46,14 +46,10 @@ Comment4 ""
 $EndDescr
 Wire Wire Line
 	2000 2650 2250 2650
-Text Label 2000 2650 0    60   ~ 0
-+5V
 Text Label 1300 1100 0    59   ~ 0
-GND
+M_GND
 Text Label 1200 700  0    60   ~ 0
-+5V
-Text Label 2000 2250 0    60   ~ 0
-+5V
+M_+5V
 Wire Wire Line
 	2000 2250 2250 2250
 Text Notes 1750 1650 0    60   ~ 0
@@ -182,14 +178,12 @@ F 3 "" H 4950 3350 50  0000 C CNN
 	1    4950 3350
 	1    0    0    -1  
 $EndComp
-Text Label 3950 2150 0    60   ~ 0
-+5V
 Text Label 4400 2750 3    59   ~ 0
 GND
 Text Label 3950 2350 0    59   ~ 0
-GND
+M_GND
 Text Label 3950 2850 0    59   ~ 0
-GND
+M_GND
 $Comp
 L R R302
 U 1 1 582ABDF2
@@ -238,12 +232,8 @@ Wire Wire Line
 	3950 2350 4250 2350
 Wire Wire Line
 	3950 2150 4250 2150
-Text Label 3950 2650 0    60   ~ 0
-+5V
 Text Label 3950 3850 0    59   ~ 0
-GND
-Text Label 3950 3650 0    60   ~ 0
-+5V
+M_GND
 Wire Wire Line
 	5350 3850 5250 3850
 Wire Wire Line
@@ -263,8 +253,6 @@ F 3 "" H 4950 3150 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	4950 3150 4850 3150
-Wire Wire Line
-	4850 3250 5350 3250
 Wire Wire Line
 	4850 3350 4950 3350
 Wire Wire Line
@@ -342,12 +330,8 @@ Wire Wire Line
 	3550 3750 3550 2550
 Wire Wire Line
 	3550 2550 3250 2550
-Text Label 4000 3150 0    60   ~ 0
-+5V
 Wire Wire Line
-	4000 3150 4250 3150
-Text Label 2750 3200 0    59   ~ 0
-GND
+	3950 3150 4250 3150
 Wire Wire Line
 	2750 3200 2750 3050
 Text Label 2750 1950 0    60   ~ 0
@@ -394,16 +378,8 @@ F 3 "" H 8600 2800 50  0000 C CNN
 	1    8600 2800
 	1    0    0    -1  
 $EndComp
-Text Label 9600 2000 2    59   ~ 0
-GND
 Wire Wire Line
 	9600 2000 9300 2000
-Text Label 9600 2800 2    59   ~ 0
-GND
-Text Label 9600 3600 2    59   ~ 0
-GND
-Text Label 9600 4400 2    59   ~ 0
-GND
 Wire Wire Line
 	9600 2800 9300 2800
 Wire Wire Line
@@ -453,20 +429,16 @@ Text HLabel 5350 3250 2    60   Input ~ 0
 MISO
 Text HLabel 5350 3850 2    60   Input ~ 0
 DP-CS
-Text HLabel 1900 2350 0    60   Input ~ 0
-BrakePot
 Text HLabel 1900 2750 0    60   Input ~ 0
+BrakePot
+Text HLabel 1900 2350 0    60   Input ~ 0
 AccelPot
 Wire Wire Line
 	2250 2350 1900 2350
 Wire Wire Line
 	2250 2750 1900 2750
-Text Label 2000 2450 0    59   ~ 0
-GND
 Wire Wire Line
 	2000 2450 2250 2450
-Text Label 2000 2850 0    59   ~ 0
-GND
 Wire Wire Line
 	2000 2850 2250 2850
 Text Notes 8000 1500 0    60   ~ 0
@@ -526,4 +498,45 @@ F 3 "" H 2750 2650 50  0000 C CNN
 	1    2750 2550
 	-1   0    0    -1  
 $EndComp
+$Comp
+L R R309
+U 1 1 582C64A8
+P 5100 3250
+F 0 "R309" V 5180 3250 50  0000 C CNN
+F 1 "1k" V 5100 3250 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 5030 3250 50  0001 C CNN
+F 3 "" H 5100 3250 50  0000 C CNN
+	1    5100 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5350 3250 5250 3250
+Wire Wire Line
+	4950 3250 4850 3250
+Text Label 2000 2250 0    60   ~ 0
+M_+5V
+Text Label 2000 2650 0    60   ~ 0
+M_+5V
+Text Label 2000 2450 0    59   ~ 0
+M_GND
+Text Label 2000 2850 0    59   ~ 0
+M_GND
+Text Label 3950 2150 0    60   ~ 0
+M_+5V
+Text Label 3950 3150 0    60   ~ 0
+M_+5V
+Text Label 3950 2650 0    60   ~ 0
+M_+5V
+Text Label 3950 3650 0    60   ~ 0
+M_+5V
+Text Label 9600 2000 2    59   ~ 0
+M_GND
+Text Label 9600 2800 2    59   ~ 0
+M_GND
+Text Label 9600 3600 2    59   ~ 0
+M_GND
+Text Label 9600 4400 2    59   ~ 0
+M_GND
+Text Label 2750 3200 0    59   ~ 0
+M_GND
 $EndSCHEMATC

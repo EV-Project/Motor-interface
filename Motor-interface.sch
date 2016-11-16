@@ -108,11 +108,11 @@ Fan-contactor-coil
 Text Label 1200 4800 0    60   ~ 0
 Reverse-contactor-coil
 Text Label 1200 4900 0    60   ~ 0
-+5V
+M_+5V
 Text Label 1200 5000 0    60   ~ 0
 Accelerator-Pot
 Text Label 1200 5100 0    60   ~ 0
-GND
+M_GND
 Text Label 1200 5200 0    60   ~ 0
 FWD/REV-Switch
 Text Label 1200 5300 0    60   ~ 0
@@ -208,13 +208,13 @@ $EndComp
 $Comp
 L CONN_01X06 P103
 U 1 1 5821DB26
-P 2850 4350
-F 0 "P103" H 2850 4700 50  0000 C CNN
-F 1 "Halls" V 2950 4350 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x06" H 2850 4350 50  0001 C CNN
-F 3 "" H 2850 4350 50  0000 C CNN
-	1    2850 4350
-	-1   0    0    -1  
+P 2900 4950
+F 0 "P103" H 2900 5300 50  0000 C CNN
+F 1 "Halls" V 3000 4950 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_2x03" H 2900 4950 50  0001 C CNN
+F 3 "" H 2900 4950 50  0000 C CNN
+	1    2900 4950
+	-1   0    0    1   
 $EndComp
 Text Label 3850 4100 2    59   ~ 0
 Motor-sensor-A
@@ -224,7 +224,7 @@ Text Label 3850 4300 2    59   ~ 0
 Motor-sensor-C
 Text Label 1200 6600 0    59   ~ 0
 Motor-temperature
-Text Label 3950 4600 2    59   ~ 0
+Text Label 4050 5100 2    59   ~ 0
 Motor-temperature
 $Comp
 L CONN_01X04 P108
@@ -366,9 +366,9 @@ Accelerator-Pot
 Text Label 2800 2200 0    60   ~ 0
 Brake-Pot
 Text Label 3100 1100 0    60   ~ 0
-+5V
+M_+5V
 Text Label 3100 1200 0    60   ~ 0
-GND
+M_GND
 $Comp
 L R R101
 U 1 1 582BCB21
@@ -514,16 +514,16 @@ Rev-Cont
 Text Label 6200 2100 0    60   ~ 0
 Fan_Cont
 Text Label 9700 5200 2    60   ~ 0
-GND
+M_GND
 Text Label 9700 5300 2    60   ~ 0
-+5V
+M_+5V
 Text Label 10700 5600 2    60   ~ 0
-GND
-Text Label 3800 4400 2    59   ~ 0
+M_GND
+Text Label 3700 4700 2    59   ~ 0
 Hall_Power
 Text Label 10700 5700 2    60   ~ 0
-+5V
-Text Label 3800 4500 2    59   ~ 0
+M_+5V
+Text Label 3700 4900 2    59   ~ 0
 Hall_GND
 Text Label 1200 6200 0    59   ~ 0
 Motor-sensor-B
@@ -660,17 +660,11 @@ Wire Wire Line
 Wire Wire Line
 	6200 2100 7300 2100
 Wire Wire Line
-	3950 4600 3050 4600
-Wire Wire Line
-	3050 4500 3800 4500
-Wire Wire Line
 	3050 4300 4150 4300
 Wire Wire Line
 	3050 4200 4250 4200
 Wire Wire Line
 	3050 4100 3950 4100
-Wire Wire Line
-	3800 4400 3050 4400
 Wire Wire Line
 	10700 5000 9400 5000
 Wire Wire Line
@@ -982,9 +976,9 @@ F 3 "" H 9800 4000 50  0000 L CNN
 	1    0    0    -1  
 $EndComp
 Text Label 8900 3900 0    60   ~ 0
-+5V
+M_+5V
 Text Label 9100 4100 0    60   ~ 0
-GND
+M_GND
 Wire Wire Line
 	9500 4100 9100 4100
 $Comp
@@ -1350,4 +1344,22 @@ F 3 "" H 7050 4350 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	7250 4300 7250 4400
+Text Label 3900 4800 2    59   ~ 0
+Motor-sensor-A
+Text Label 3900 5000 2    59   ~ 0
+Motor-sensor-B
+Text Label 3950 5200 2    59   ~ 0
+Motor-sensor-C
+Wire Wire Line
+	3700 4700 3100 4700
+Wire Wire Line
+	3100 4800 3900 4800
+Wire Wire Line
+	3700 4900 3100 4900
+Wire Wire Line
+	3100 5000 3900 5000
+Wire Wire Line
+	4050 5100 3100 5100
+Wire Wire Line
+	3100 5200 3950 5200
 $EndSCHEMATC
