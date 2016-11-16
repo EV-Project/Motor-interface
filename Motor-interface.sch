@@ -58,7 +58,7 @@ U 1 1 57FC913B
 P 8000 1900
 F 0 "U109" H 8000 1750 39  0000 C CNN
 F 1 "Teensy_3.2" H 8000 2450 39  0000 C CNN
-F 2 "electric_car_lib:Teensy3.2_inv" H 7700 1450 39  0001 C CNN
+F 2 "electric_car_lib:Teensy3.2" H 7700 1450 39  0001 C CNN
 F 3 "" H 7700 1450 39  0000 C CNN
 	1    8000 1900
 	-1   0    0    -1  

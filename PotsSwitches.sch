@@ -334,8 +334,6 @@ Wire Wire Line
 	3950 3150 4250 3150
 Wire Wire Line
 	2750 3200 2750 3050
-Text Label 2750 1950 0    60   ~ 0
-+5V
 Wire Wire Line
 	2750 1950 2750 2050
 Text HLabel 1000 700  0    60   Input ~ 0
@@ -539,4 +537,6 @@ Text Label 9600 4400 2    59   ~ 0
 M_GND
 Text Label 2750 3200 0    59   ~ 0
 M_GND
+Text Label 2750 1950 0    60   ~ 0
+M_+5V
 $EndSCHEMATC
