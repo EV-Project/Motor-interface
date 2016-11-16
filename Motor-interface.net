@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/engineering/Documents/Motor-interface/Motor-interface.sch)
-    (date "Wed 16 Nov 2016 14:05:32 AWST")
+    (date "Wed 16 Nov 2016 14:25:40 AWST")
     (tool "Eeschema 4.0.2+dfsg1-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -39,7 +39,7 @@
   (components
     (comp (ref U109)
       (value Teensy_3.2)
-      (footprint electric_car_lib:Teensy3.2_inv)
+      (footprint electric_car_lib:Teensy3.2)
       (libsource (lib electric_car) (part Teensy_3.2))
       (sheetpath (names /) (tstamps /))
       (tstamp 57FC913B))
