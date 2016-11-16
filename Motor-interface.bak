@@ -192,7 +192,7 @@ Text Notes 3000 3400 0    60   ~ 0
 Motor Hall Effect Connections
 Text Notes 9150 4750 0    60   ~ 0
 Motor Controller USB and CAN lines
-Text Label 6200 2400 0    60   ~ 0
+Text Label 6200 2100 0    60   ~ 0
 Reverse
 $Comp
 L R R113
@@ -501,11 +501,11 @@ F 3 "" H 5750 7200 50  0000 C CNN
 	1    5750 7200
 	0    1    1    0   
 $EndComp
-Text Label 6200 2300 0    60   ~ 0
-Brake
 Text Label 6200 2200 0    60   ~ 0
+Brake
+Text Label 6200 2300 0    60   ~ 0
 Cruise
-Text Label 6200 2100 0    60   ~ 0
+Text Label 6200 2400 0    60   ~ 0
 Hybrid
 Text Label 6200 2000 0    60   ~ 0
 Line-Cont
