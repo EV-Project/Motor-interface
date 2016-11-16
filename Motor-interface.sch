@@ -501,17 +501,17 @@ F 3 "" H 5750 7200 50  0000 C CNN
 	1    5750 7200
 	0    1    1    0   
 $EndComp
-Text Label 6200 2000 0    60   ~ 0
-Brake
-Text Label 6200 1900 0    60   ~ 0
-Cruise
-Text Label 6200 1800 0    60   ~ 0
-Hybrid
 Text Label 6200 2200 0    60   ~ 0
-Line-Cont
-Text Label 6200 2400 0    60   ~ 0
-Rev-Cont
+Brake
 Text Label 6200 2300 0    60   ~ 0
+Cruise
+Text Label 6200 2400 0    60   ~ 0
+Hybrid
+Text Label 6200 2000 0    60   ~ 0
+Line-Cont
+Text Label 6200 1800 0    60   ~ 0
+Rev-Cont
+Text Label 6200 1900 0    60   ~ 0
 Fan_Cont
 Text Label 9700 5200 2    60   ~ 0
 M_GND
