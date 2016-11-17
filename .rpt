@@ -1,11 +1,37 @@
 ** Drc report for /home/kicad/Documents/Motor-interface/Motor-interface.kicad_pcb **
-** Created on 2016-11-17 04:11:47 **
+** Created on 2016-11-17 06:04:26 **
 
-** Found 2 DRC errors **
-ErrType(32): NetClass Via Dia &lt; global limit
-    @ (0,000 mm,0,000 mm): NETCLASS: 'Default' has Via Dia:0,6 which is less than global:0,7
-ErrType(32): NetClass Via Dia &lt; global limit
-    @ (0,000 mm,0,000 mm): NETCLASS: 'HT' has Via Dia:0,6 which is less than global:0,7
+** Found 10 DRC errors **
+ErrType(19): Pad near pad
+    @ (66,305 mm,86,480 mm): Pad on F.Cu, B.Cu, Internal, Non-copper of W101
+    @ (68,930 mm,86,480 mm): Pad 1 on F.Cu, B.Cu, Internal, Non-copper of W101
+ErrType(19): Pad near pad
+    @ (67,074 mm,84,624 mm): Pad on F.Cu, B.Cu, Internal, Non-copper of W101
+    @ (68,930 mm,86,480 mm): Pad 1 on F.Cu, B.Cu, Internal, Non-copper of W101
+ErrType(19): Pad near pad
+    @ (67,074 mm,88,336 mm): Pad on F.Cu, B.Cu, Internal, Non-copper of W101
+    @ (68,930 mm,86,480 mm): Pad 1 on F.Cu, B.Cu, Internal, Non-copper of W101
+ErrType(19): Pad near pad
+    @ (68,930 mm,83,855 mm): Pad on F.Cu, B.Cu, Internal, Non-copper of W101
+    @ (68,930 mm,86,480 mm): Pad 1 on F.Cu, B.Cu, Internal, Non-copper of W101
+ErrType(19): Pad near pad
+    @ (68,930 mm,86,480 mm): Pad 1 on F.Cu, B.Cu, Internal, Non-copper of W101
+    @ (68,930 mm,89,105 mm): Pad on F.Cu, B.Cu, Internal, Non-copper of W101
+ErrType(19): Pad near pad
+    @ (116,305 mm,86,480 mm): Pad on F.Cu, B.Cu, Internal, Non-copper of W102
+    @ (118,930 mm,86,480 mm): Pad 1 on F.Cu, B.Cu, Internal, Non-copper of W102
+ErrType(19): Pad near pad
+    @ (117,074 mm,84,624 mm): Pad on F.Cu, B.Cu, Internal, Non-copper of W102
+    @ (118,930 mm,86,480 mm): Pad 1 on F.Cu, B.Cu, Internal, Non-copper of W102
+ErrType(19): Pad near pad
+    @ (117,074 mm,88,336 mm): Pad on F.Cu, B.Cu, Internal, Non-copper of W102
+    @ (118,930 mm,86,480 mm): Pad 1 on F.Cu, B.Cu, Internal, Non-copper of W102
+ErrType(19): Pad near pad
+    @ (118,930 mm,83,855 mm): Pad on F.Cu, B.Cu, Internal, Non-copper of W102
+    @ (118,930 mm,86,480 mm): Pad 1 on F.Cu, B.Cu, Internal, Non-copper of W102
+ErrType(19): Pad near pad
+    @ (118,930 mm,86,480 mm): Pad 1 on F.Cu, B.Cu, Internal, Non-copper of W102
+    @ (118,930 mm,89,105 mm): Pad on F.Cu, B.Cu, Internal, Non-copper of W102
 
 ** Found 0 unconnected pads **
 
