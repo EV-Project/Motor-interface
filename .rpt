@@ -1,9 +1,11 @@
 ** Drc report for /home/kicad/Documents/Motor-interface/Motor-interface.kicad_pcb **
-** Created on 2016-11-17 02:52:19 **
+** Created on 2016-11-17 04:11:47 **
 
-** Found 1 DRC errors **
-ErrType(24): Copper area belongs a net which has no pads. This is strange
-    @ (97,820 mm,138,620 mm): Zone Outline  (582C2F21) [/PotsSwitches/Motor_GND] on B.Cu
+** Found 2 DRC errors **
+ErrType(32): NetClass Via Dia &lt; global limit
+    @ (0,000 mm,0,000 mm): NETCLASS: 'Default' has Via Dia:0,6 which is less than global:0,7
+ErrType(32): NetClass Via Dia &lt; global limit
+    @ (0,000 mm,0,000 mm): NETCLASS: 'HT' has Via Dia:0,6 which is less than global:0,7
 
 ** Found 0 unconnected pads **
 
