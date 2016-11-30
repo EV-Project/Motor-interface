@@ -1,4 +1,4 @@
-update=Tue 11 Oct 2016 11:16:09 AWST
+update=Mi 30 Nov 2016 05:29:03 CET
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,3 +59,13 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=/home/engineering/Documents/electric_car_lib/electric_car
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
